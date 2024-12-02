@@ -109,7 +109,7 @@ timeout = 3
 interval = 30
 healthcheck_path = "/login"
 ssl_policy = ["ELBSecurityPolicy-2016-08", "ELBSecurityPolicy-TLS-1-2-2017-01", "ELBSecurityPolicy-TLS-1-1-2017-01", "ELBSecurityPolicy-TLS-1-2-Ext-2018-06", "ELBSecurityPolicy-FS-2018-06", "ELBSecurityPolicy-2015-05"]
-certificate_arn = "arn:aws:acm:us-east-2:027330342406:certificate/15169da9-f749-422b-a89e-55e50d330d04"
+certificate_arn = "arn:aws:acm:us-east-2:0XXXXXXXXXXX:certificate/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 type = ["forward", "redirect", "fixed-response"]
 
 
