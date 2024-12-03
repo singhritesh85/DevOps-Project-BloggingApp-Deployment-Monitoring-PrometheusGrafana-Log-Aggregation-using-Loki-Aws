@@ -62,9 +62,9 @@ addon_version_coredns   = ["v1.10.1-eksbuild.7", "v1.10.1-eksbuild.6", "v1.10.1-
   publicly_accessible = ["true", "false"]  #### Select between true or false
 #  read_replica_vpc_security_group_ids = ["sg-038XXXXXXXXXXXXc291", "sg-a2XXXXXXca"]
 #  backup_retention_period = 7   ### For Demo purpose I am not creating any db backup.
-  kms_key_id_rds = "arn:aws:kms:us-east-2:027330342406:key/203d5df3-a87c-479d-9b54-24c88e5b3517"
+  kms_key_id_rds = "arn:aws:kms:us-east-2:02XXXXXXXXX6:key/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 #  read_replica_kms_key_id = "arn:aws:kms:us-east-2:027XXXXXXX06:key/20XXXXXXf3-aXXc-4XXd-9XX4-24XXXXXXXXXX17"  ### I am not using any read replica here.
-  monitoring_role_arn = "arn:aws:iam::027330342406:role/rds-monitoring-role"
+  monitoring_role_arn = "arn:aws:iam::02XXXXXXXXX6:role/rds-monitoring-role"
   enabled_cloudwatch_logs_exports = ["postgresql", "upgrade"]   ### ["audit", "error", "general", "slowquery"]  for MySQL
 
 ##############################Parameters to launch EC2#############################
@@ -81,7 +81,7 @@ cidr_blocks = ["0.0.0.0/0"]
 #instance_type = [ "t3.micro", "t3.small", "t3.medium", "t3.large", "t3.xlarge" ]
 name = "Jenkins"
 
-kms_key_id = "arn:aws:kms:us-east-2:027330342406:key/d387bfc3-9214-4414-b2eb-8786965c2619"   ### Provide the ARN of KMS Key.
+kms_key_id = "arn:aws:kms:us-east-2:02XXXXXXXXX6:key/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"   ### Provide the ARN of KMS Key.
 
 #env = ["dev", "stage", "prod"]
 
