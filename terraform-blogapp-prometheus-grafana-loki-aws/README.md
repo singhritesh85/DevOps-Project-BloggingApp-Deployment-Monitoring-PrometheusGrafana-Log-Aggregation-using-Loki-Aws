@@ -5,7 +5,7 @@
 3. Provide SSH Private Key in the file user_data_blackbox_exporter.sh, user_data_grafana.sh, user_data_jenkins_master.sh, user_data_jenkins_slave.sh, user_data_loki.sh, user_data_nexus.sh, user_data_prometheus.sh and user_data_sonarqube.sh
 4. Provide SSH Private Key in the file mykey.pem and assign 600 permission on this file using the command chmod 600 mykey.pem.
 5. An IAM Role with the Name "AmazonS3FullAccess" should be existed in the AWS Account(with IAM Policy AmazonS3FullAccess should be attached). The Aim is to provide RBAC Access to EC2 Instances to send Loki logs to S3 Bucket.
-6. Provide Certificate ARN in the file terraform.tfvars.
+6. Provide Certificate ARN, KMS Key ID for RDS, KMS Key ID for EBS and RDS Monitoring Role ARN in the file terraform.tfvars.
 ```
 
 # Install and configure EKS Container Insight 
