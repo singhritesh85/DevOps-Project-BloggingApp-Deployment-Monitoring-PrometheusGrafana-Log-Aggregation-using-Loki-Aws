@@ -18,7 +18,7 @@ pipeline{
     stages{
         stage("Clone-Code"){
             steps{
-                checkout scmGit(branches: [[name: '${COMMIT_ID}']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkins-cred', url: 'https://github.com/singhritesh85/Blogging-App.git']])
+                checkout scmGit(branches: [[name: '${COMMIT_ID}']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-cred', url: 'https://github.com/singhritesh85/Blogging-App.git']])
             }
         }
         stage("SonarQube Analysis and Build"){
