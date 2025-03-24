@@ -15,7 +15,7 @@ chmod 440 /etc/sudoers.d/ritesh;
 cd /opt && wget https://github.com/grafana/loki/releases/download/v3.2.1/loki-linux-amd64.zip
 unzip loki-linux-amd64.zip
 rm -f loki-linux-amd64.zip
-cd /opt && wget https://raw.githubusercontent.com/grafana/loki/main/cmd/loki/loki-local-config.yaml
+cd /opt && wget https://raw.githubusercontent.com/grafana/loki/v3.2.1/cmd/loki/loki-local-config.yaml
 
 LOCAL_SERVER_PRIVATE_IP=`ip addr| grep "dynamic eth0" | cut -d ' ' -f 6 | sed s'/\/.*//g'`
 sed -i "0,/instance_addr: 127.0.0.1/s//instance_addr: $LOCAL_SERVER_PRIVATE_IP/" /opt/loki-local-config.yaml
